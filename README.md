@@ -3,7 +3,6 @@
 <p align="center">
   <b>Aplicativo interativo para análise e previsão do estresse em estudantes</b><br>
   Desenvolvido com Streamlit, Python e Machine Learning<br>
-  🔗 Acesse online: [Student Stress Monitoring](https://student-stress-monitoring-cqg9rtjlskwuyc9cjtpdxk.streamlit.app/)
 </p>
 
 ---
