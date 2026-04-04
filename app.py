@@ -91,7 +91,7 @@ modelo = carregar_modelo()
 st.sidebar.title("Navegação")
 opcao = st.sidebar.radio(
     "Selecione:",
-    ["Visão Geral", "Modelo", "Gráficos", "Grupos", "Previsão"]
+    ["Visão Geral", "Modelo", "Gráficos", "Grupos"]
 )
 
 
@@ -208,39 +208,3 @@ elif opcao == "Grupos":
     fig, ax = plt.subplots()
     sns.barplot(data=df_resultado, x="Correlação", y="Grupo", ax=ax)
     st.pyplot(fig)
-
-
-
-# =====================================
-# PREVISÃO
-# =====================================
-elif opcao == "Previsão":
-
-    X = df.drop("stress_level", axis=1)
-
-    entrada = []
-
-    for col in X.columns:
-        valor = st.slider(
-            traducao.get(col, col),
-            int(df[col].min()),
-            int(df[col].max())
-        )
-        entrada.append(valor)
-
-    if st.button("Prever"):
-
-        entrada_array = np.array(entrada).reshape(1, -1)
-
-        pred = modelo.predict(entrada_array)[0]
-        proba = modelo.predict_proba(entrada_array)[0]
-
-        mapa = {
-            0: "Baixo",
-            1: "Médio",
-            2: "Alto"
-        }
-
-        st.subheader("Resultado")
-        st.write("Nível de estresse:", mapa.get(pred, pred))
-        st.write("Probabilidades:", proba)

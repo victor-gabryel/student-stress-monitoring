@@ -7,7 +7,7 @@
 
 ---
 
-## 🔹 Descrição
+## Descrição
 
 Este projeto consiste em um **sistema de análise e previsão do estresse em estudantes** com base em diversas métricas de saúde física, mental, acadêmica e social. Ele permite explorar dados, visualizar correlações, avaliar modelos de Machine Learning e realizar previsões personalizadas.
 
@@ -18,7 +18,7 @@ Você pode acessar a versão online do aplicativo aqui:
 
 ---
 
-## 🔹 Funcionalidades
+## Funcionalidades
 
 O aplicativo possui cinco seções principais:
 
@@ -45,7 +45,7 @@ O aplicativo possui cinco seções principais:
 
 ---
 
-## 🔹 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Streamlit** – Interface web interativa  
 - **Pandas** – Manipulação de dados  
@@ -57,7 +57,7 @@ O aplicativo possui cinco seções principais:
 
 ---
 
-## 🔹 Estrutura do Projeto
+## Estrutura do Projeto
 
     ├── app.py # Código principal do Streamlit
     ├── experimento.py # Experimentos e testes adicionais
